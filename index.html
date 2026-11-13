@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miguel Broedel / Backend engineer, fintech and AI</title>
+<meta name="description" content="Miguel Broedel, backend engineer for fintech and AI. Sorocaba, São Paulo, Brazil.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300&family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;800;900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Icons: arrows + mail authored on a 24px grid (miter joins, square caps). Brand marks: Simple Icons, CC0. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-r" viewBox="0 0 24 24"><path d="M3 12h17M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-ur" viewBox="0 0 24 24"><path d="M6 18L18 6M8 6h10v10"/></symbol>
+  <symbol id="i-d" viewBox="0 0 24 24"><path d="M12 3v17M5 13l7 7 7-7"/></symbol>
+  <symbol id="b-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="b-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="b-youtube" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+  <symbol id="b-substack" viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 5l9 8 9-8"/></symbol>
+  <symbol id="i-re" viewBox="0 0 24 24"><path d="M4 4v6h6M4.6 10A8 8 0 1 1 6 17.7"/></symbol>
+</svg>
+
+<a class="skip" href="#main" data-i18n="t0">Skip to content</a>
+
+<!-- HERO: payments arrive home and settle -->
+<header id="top" class="hero dark">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Miguel Broedel, home">
+        <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><g><rect x="16.5" y="1" width="7" height="38"/><rect x="16.5" y="1" width="7" height="38" transform="rotate(60 20 20)"/><rect x="16.5" y="1" width="7" height="38" transform="rotate(120 20 20)"/></g></svg>
+      </a>
+      <div class="nav-x">
+        <a class="mono w nav-a" href="#work" data-i18n="t1">01 Work</a>
+        <a class="mono w nav-a" href="#think" data-i18n="t2">02 How I think</a>
+        <a class="mono w nav-a" href="#writing" data-i18n="t3">03 Writing</a>
+        <a class="mono w nav-a" href="#lab">04 Lab</a>
+        <a class="mono w nav-a" href="#about" data-i18n="t4">05 About</a>
+      </div>
+      <div class="nav-r">
+        <button class="lang mono" type="button" aria-label="Ver em português" lang="pt-BR">
+          <svg class="flag flag--br" viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#009C3B"/><path d="M10 1.8 18 7l-8 5.2L2 7z" fill="#FFDF00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/></svg>
+          <svg class="flag flag--us" viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#F2F2F2"/><path d="M0 0h20v2H0zM0 4h20v2H0zM0 8h20v2H0zM0 12h20v2H0z" fill="#B22234"/><rect width="9" height="8" fill="#3C3B6E"/></svg>
+          <span class="lang-c" aria-hidden="true"></span>
+        </button>
+        <a class="mono w nav-a nav-cta" href="#contact" data-i18n="t5">Contact + CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <div class="ident">
+        <h1 id="name" class="name">Miguel Broedel</h1>
+        <p class="mono muted" data-i18n="t6"><span class="nw">Software engineer</span> / <span class="nw">Self-taught since 14</span></p>
+      </div>
+
+      <div class="hero-foot">
+        <p class="hero-lead" data-i18n="t7">Backend engineer for fintech and AI. I build software that <em class="serif">balances</em>.</p>
+        <div class="actions">
+          <a class="btn btn--solid w" href="#work" data-i18n="t8">See the work <svg class="i"><use href="#i-d"/></svg></a>
+          <a class="btn w" href="#contact" data-i18n="t9">Get in touch <svg class="i"><use href="#i-r"/></svg></a>
+        </div>
+        <ul class="socials" aria-label="Elsewhere">
+          <li><a class="soc" href="https://github.com/MigsBroedel" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ib"><use href="#b-github"/></svg></a></li>
+          <li><a class="soc" href="https://www.linkedin.com/in/miguel-miguel-broedel-dos-santos/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ib"><use href="#b-linkedin"/></svg></a></li>
+          <li><a class="soc" href="https://substack.com/@migsbored/posts" target="_blank" rel="noopener" aria-label="Substack"><svg class="ib"><use href="#b-substack"/></svg></a></li>
+          <li><a class="soc" href="https://www.youtube.com/@MiguelBroedel" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ib"><use href="#b-youtube"/></svg></a></li>
+          <li><a class="soc" href="mailto:miguel.broedel09@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a></li>
+        </ul>
+      </div>
+
+      <dl class="cells cells--hero">
+        <div class="cell"><dt class="mono muted" data-i18n="t10">Based</dt><dd class="cell-v">Sorocaba, São&nbsp;Paulo, BR</dd></div>
+        <div class="cell"><dt class="mono muted" data-i18n="t11">Now</dt><dd class="cell-v" data-i18n="t12">XoPlanilha, in production</dd></div>
+        <div class="cell cell--span"><dt class="mono muted">Status</dt><dd class="cell-v" data-i18n="t13"><span class="sq" aria-hidden="true"></span>Open to internships and junior roles, 2027</dd></div>
+      </dl>
+    </div>
+
+    <figure class="wake-fig">
+      <div class="wake-wrap" tabindex="0" aria-label="A working Rubik's cube drawn in halftone dots" aria-describedby="cube-help">
+        <canvas class="wake" aria-hidden="true"></canvas>
+      </div>
+      <p id="cube-help" class="sr" data-i18n="t14">Drag a face to turn it, or drag beside it to look around. Keyboard: U, D, L, R, F and B turn a face clockwise; add Shift to turn it back. Arrow keys turn the whole cube.</p>
+      <div class="cube-bar">
+        <p class="mono muted" aria-live="polite"><span data-b="cubeState">Solved</span> / <span class="num" data-b="cubeMoves">0</span> <span data-i18n="t15">moves</span></p>
+        <div class="actions">
+          <button class="btn btn--sm w" type="button" id="cubeScramble" data-i18n="t16">Scramble</button>
+          <button class="btn btn--sm w" type="button" id="cubeSolve" data-i18n="t17">Solve</button>
+        </div>
+      </div>
+    </figure>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 01 WORK -->
+  <section id="work" class="sec dark" aria-labelledby="h-work">
+    <div class="wrap">
+      <div class="sec-head draw">
+        <span class="mono idx">01</span>
+        <h2 id="h-work" class="h2" data-i18n="t18">Selected work</h2>
+      </div>
+
+      <!-- RAIA -->
+      <article class="project" aria-labelledby="h-raia">
+        <div class="proj">
+          <div class="proj-copy">
+            <div class="stack-16">
+              <p class="mono muted" data-i18n="t19">A1 / B2B financial management SaaS / Jan–Jun 2026</p>
+              <h3 id="h-raia" class="h3 h3--xl">Raia</h3>
+              <p class="lead" data-i18n="t20">Co-founder and CTO. I designed the architecture and built the path from a raw document to a reconciled entry.</p>
+            </div>
+            <div class="stack-12">
+              <span class="mono muted" data-i18n="t21">What I built</span>
+              <ul class="built">
+                <li data-i18n="t22">Accounts payable and receivable, transactions, reconciliation</li>
+                <li data-i18n="t23">Document pipelines with parsers and LLMs</li>
+                <li data-i18n="t24">AI categorization that learns each user's patterns</li>
+                <li data-i18n="t25">Authentication, financial alerts, PDF reports</li>
+                <li data-i18n="t26">Payments through AbacatePay</li>
+                <li data-i18n="t27">Deploys, backups, secure releases</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-h"><span class="mono dec" data-i18n="t28">Fig. 1 / Reconcile it yourself</span><span class="mono muted" data-i18n="t29">Sample data</span></div>
+            <div class="rec-grid">
+              <div class="stack-8">
+                <span class="mono muted" data-i18n="t30">Ledger / pick an entry</span>
+                <div id="ledger" class="dyn"></div>
+              </div>
+              <div class="stack-8">
+                <span class="mono muted" data-i18n="t31">Bank / then its match</span>
+                <div id="bank" class="dyn"></div>
+              </div>
+            </div>
+            <div class="panel-f">
+              <div class="stack-4" aria-live="polite">
+                <span class="mono muted"><span data-i18n="t32">Unreconciled</span> / <span data-b="openLabel"></span></span>
+                <span class="bal num" data-b="open"></span>
+                <span class="mono muted rec-hint" data-b="recHint"></span>
+              </div>
+              <div class="actions">
+                <button class="btn w" type="button" id="autoRec" data-i18n="t33">Auto-reconcile</button>
+                <button class="btn w" type="button" id="resetRec" data-i18n="t34">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <figure class="diagram">
+          <figcaption class="panel-h"><span class="mono dec" data-i18n="t35">Fig. 1b / How a document becomes a reconciled entry</span></figcaption>
+          <div class="dg-scroll" tabindex="0" role="region" aria-label="Raia architecture diagram, scrolls sideways on small screens">
+            <svg class="dg" viewBox="0 0 1060 400" role="img" aria-labelledby="dg-t dg-d">
+              <title id="dg-t" data-i18n="t36">Raia architecture</title>
+              <desc id="dg-d" data-i18n="t37">Documents pass through parsers and LLMs into the core, a PostgreSQL schema of 14 tables holding transactions, payables and receivables, reconciliation and auth. The core feeds AI categorization, which learns each user's patterns and writes back, plus financial alerts and PDF reports. AbacatePay handles payments. Deploys, backups and secure releases run underneath.</desc>
+              <g class="dg-edges">
+                <path id="e1" class="dg-e" pathLength="1" d="M180 178 H220 V118 H260"/>
+                <path id="e2" class="dg-e" pathLength="1" d="M180 178 H220 V238 H260"/>
+                <path id="e3" class="dg-e" pathLength="1" d="M420 118 H460 V170 H500"/>
+                <path id="e4" class="dg-e" pathLength="1" d="M420 238 H460 V170 H500"/>
+                <path id="e9" class="dg-e" pathLength="1" d="M180 318 H460 V270 H500"/>
+                <path id="e5" class="dg-e" pathLength="1" d="M760 88 H840"/>
+                <path id="e6" class="dg-e dg-e--back" pathLength="1" d="M930 116 V146 H760"/>
+                <path id="e7" class="dg-e" pathLength="1" d="M760 198 H840"/>
+                <path id="e8" class="dg-e" pathLength="1" d="M760 278 H840"/>
+              </g>
+              <g class="dg-nodes">
+                <g class="dg-n"><rect x="20" y="150" width="160" height="56"/><text class="dg-l" x="36" y="184" data-i18n="t38">Documents</text></g>
+                <g class="dg-n"><rect x="260" y="90" width="160" height="56"/><text class="dg-l" x="276" y="124">Parsers</text></g>
+                <g class="dg-n"><rect x="260" y="210" width="160" height="56"/><text class="dg-l" x="276" y="244">LLMs</text></g>
+                <g class="dg-n"><rect x="20" y="290" width="160" height="56"/><text class="dg-l" x="36" y="324">AbacatePay</text></g>
+                <g class="dg-n">
+                  <rect x="500" y="40" width="260" height="260"/>
+                  <text class="dg-k" x="516" y="68" data-i18n="t39">CORE / POSTGRESQL, 14 TABLES</text>
+                  <rect class="dg-in" x="516" y="90" width="228" height="36"/><text class="dg-s" x="530" y="113" data-i18n="t40">Transactions</text>
+                  <rect class="dg-in" x="516" y="140" width="228" height="36"/><text class="dg-s" x="530" y="163" data-i18n="t41">Payables + receivables</text>
+                  <rect class="dg-in" x="516" y="190" width="228" height="36"/><text class="dg-s" x="530" y="213" data-i18n="t42">Reconciliation</text>
+                  <rect class="dg-in" x="516" y="240" width="228" height="36"/><text class="dg-s" x="530" y="263">Auth</text>
+                </g>
+                <g class="dg-n"><rect x="840" y="60" width="180" height="56"/><text class="dg-l" x="856" y="86" data-i18n="t43">AI categorization</text><text class="dg-k" x="856" y="104" data-i18n="t44">LEARNS PER USER</text></g>
+                <g class="dg-n"><rect x="840" y="170" width="180" height="56"/><text class="dg-l" x="856" y="204" data-i18n="t45">Financial alerts</text></g>
+                <g class="dg-n"><rect x="840" y="250" width="180" height="56"/><text class="dg-l" x="856" y="284" data-i18n="t46">PDF reports</text></g>
+                <g class="dg-n"><rect class="dg-ops" x="20" y="346" width="1000" height="40"/><text class="dg-k" x="36" y="371" data-i18n="t47">OPS / DEPLOYS, BACKUPS, SECURE RELEASES</text></g>
+              </g>
+              <rect class="dg-pk" x="-20" y="-20" width="8" height="8"/>
+            </svg>
+          </div>
+        </figure>
+
+        <dl class="cells">
+          <div class="cell"><dt class="mono muted">Schema</dt><dd class="cell-v" data-i18n="t48">PostgreSQL, 14 tables</dd></div>
+          <div class="cell"><dt class="mono muted">Stack</dt><dd><span class="ph">[RAIA STACK]</span></dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t49">Outcome</dt><dd><span class="ph">[OUTCOME]</span></dd></div>
+        </dl>
+        <dl class="cells cells--wide">
+          <div class="cell"><dt class="mono muted" data-i18n="t50">D1 / Decision</dt><dd class="cell-p" data-i18n="t53">Parsers and LLMs share one document pipeline. <span class="ph">[TRADEOFF]</span></dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t51">D2 / Decision</dt><dd class="cell-p" data-i18n="t54">Categorization learns each user's patterns. <span class="ph">[TRADEOFF]</span></dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t52">D3 / Decision</dt><dd class="cell-p" data-i18n="t55">One schema of 14 tables holds the ledger. <span class="ph">[TRADEOFF]</span></dd></div>
+        </dl>
+      </article>
+
+      <!-- XOPLANILHA -->
+      <article class="project project--ruled draw" aria-labelledby="h-xo">
+        <div class="proj">
+          <div class="panel">
+            <div class="panel-h"><span class="mono dec" data-i18n="t56">Fig. 2 / Import a statement</span><span class="mono muted" data-i18n="t29">Sample data</span></div>
+            <div id="xoRows" class="dyn panel-b"></div>
+            <div class="panel-f panel-f--center">
+              <span class="mono muted" aria-live="polite" data-b="xoStatus"></span>
+              <button class="btn w" type="button" id="xoRun" data-i18n="t57">Import again</button>
+            </div>
+          </div>
+
+          <div class="proj-copy rev">
+            <div class="stack-16">
+              <p class="mono muted" data-i18n="t58">A2 / Personal finance platform / Apr 2026–present</p>
+              <h3 id="h-xo" class="h3 h3--l">Xo<wbr>Planilha</h3>
+              <p class="lead" data-i18n="t59">A financial consulting methodology turned into software. Statements go in, categories come out.</p>
+            </div>
+            <ul class="chips" aria-label="Features">
+              <li class="chip" data-i18n="t60">Recurring income + expenses</li><li class="chip" data-i18n="t61">Goals</li><li class="chip" data-i18n="t62">Investment tracking</li><li class="chip" data-i18n="t63">Document import</li><li class="chip" data-i18n="t64">Automated categorization</li>
+            </ul>
+          </div>
+        </div>
+
+        <dl class="cells">
+          <div class="cell cell--signal"><dt class="mono" data-i18n="t65">Users, in production</dt><dd class="stat num">15+</dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t66">Role</dt><dd class="cell-v" data-i18n="t67">Software Engineer</dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t68">Origin</dt><dd class="cell-v" data-i18n="t69">Freelance project, 2025</dd></div>
+          <div class="cell"><dt class="mono muted">Stack</dt><dd><span class="ph">[XOPLANILHA STACK]</span></dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t70">Decisions</dt><dd><span class="ph">[DECISION + TRADEOFF]</span></dd></div>
+        </dl>
+      </article>
+
+      <!-- FREELANCE -->
+      <article class="free draw" aria-labelledby="h-free">
+        <p class="mono muted" data-i18n="t71">A3 / Jun–Dec 2025</p>
+        <h3 id="h-free" class="h3 h3--s">Freelance</h3>
+        <p class="free-p" data-i18n="t72">Custom software for two clients, and the first version of what became XoPlanilha.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 02 THINK -->
+  <section id="think" class="sec light" aria-labelledby="h-think">
+    <div class="wrap">
+      <div class="sec-head draw">
+        <span class="mono idx">02</span>
+        <h2 id="h-think" class="h2" data-i18n="t73">How I <em class="serif">think</em></h2>
+      </div>
+      <ol class="rules">
+        <li class="draw"><span class="mono">B1</span><div class="rule-b"><span class="rule-t" data-i18n="t74">Domain first.</span><span class="rule-p" data-i18n="t75">I learn how the money moves before I name a table.</span></div></li>
+        <li class="draw"><span class="mono">B2</span><div class="rule-b"><span class="rule-t" data-i18n="t76">Fit over familiarity.</span><span class="rule-p" data-i18n="t77">The problem picks the tool. Parsers where rules hold, LLMs where they stop.</span></div></li>
+        <li class="draw"><span class="mono">B3</span><div class="rule-b"><span class="rule-t" data-i18n="t78">Keep it simple.</span><span class="rule-p" data-i18n="t79">I ship the version I can explain in a paragraph and maintain alone.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 03 WRITING -->
+  <section id="writing" class="sec sec--flush-top light" aria-labelledby="h-writing">
+    <div class="wrap">
+      <div class="sec-head draw">
+        <span class="mono idx">03</span>
+        <h2 id="h-writing" class="h2" data-i18n="t80">Writing</h2>
+        <a class="mono w nav-a" href="https://substack.com/@migsbored/posts" target="_blank" rel="noopener" data-i18n="t81">All posts on Substack <svg class="i"><use href="#i-ur"/></svg></a>
+      </div>
+      <ol class="index draw">
+        <li><a class="row w" href="https://migsbored.substack.com/p/se-for-pra-viver-e-ter-um-objetivo" target="_blank" rel="noopener"><span class="mono">W1</span><span class="row-t" lang="pt-BR">Se for pra viver e ter um objetivo, divirta-se.</span><span class="mono hide-s"><time datetime="2026-02-24" data-i18n="t82">Feb 2026</time></span><span class="row-h hide-s" data-i18n="t85">Why do you do what you do? On building from real wanting.</span><svg class="i arrow" aria-hidden="true"><use href="#i-ur"/></svg><span class="sr" data-i18n="t88">(opens Substack, in Portuguese)</span></a></li>
+        <li><a class="row w" href="https://migsbored.substack.com/p/minha-experiencia-empreendendo-com" target="_blank" rel="noopener"><span class="mono">W2</span><span class="row-t" lang="pt-BR">Minha experiência empreendendo com 16 anos: SaaS</span><span class="mono hide-s"><time datetime="2025-08-25" data-i18n="t83">Aug 2025</time></span><span class="row-h hide-s" data-i18n="t86">My first company, a SaaS, started at 16. What it taught me.</span><svg class="i arrow" aria-hidden="true"><use href="#i-ur"/></svg><span class="sr" data-i18n="t88">(opens Substack, in Portuguese)</span></a></li>
+        <li><a class="row w" href="https://migsbored.substack.com/p/sobre-criar-se-inspirar-e-nao-se" target="_blank" rel="noopener"><span class="mono">W3</span><span class="row-t" lang="pt-BR">Sobre criar, se inspirar, e não se contentar</span><span class="mono hide-s"><time datetime="2025-09-12" data-i18n="t84">Sep 2025</time></span><span class="row-h hide-s" data-i18n="t87">On making things, motivation, and not settling for the first decision.</span><svg class="i arrow" aria-hidden="true"><use href="#i-ur"/></svg><span class="sr" data-i18n="t88">(opens Substack, in Portuguese)</span></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 04 LAB -->
+  <section id="lab" class="sec dark" aria-labelledby="h-lab">
+    <div class="wrap">
+      <div class="sec-head draw">
+        <span class="mono idx">04</span>
+        <h2 id="h-lab" class="h2">Lab</h2>
+      </div>
+      <div class="cells cells--lab">
+        <article class="cell cell--lab" aria-labelledby="h-navi">
+          <div class="stack-16">
+            <div class="cell-top"><span class="mono muted" data-i18n="t89">L1 / Agent framework</span><span class="mono badge" data-i18n="t90">In development</span></div>
+            <h3 id="h-navi" class="h3 h3--m">Navi</h3>
+            <p class="lab-p" data-i18n="t91">A personal AI agent framework. My own orchestration harness, on LangGraph.</p>
+          </div>
+          <div class="stack-12">
+            <ol class="chips chips--lg chips--flow" aria-label="Graph">
+              <li class="chip pulse" data-i18n="t92">Start</li>
+              <li class="chip pulse" style="--d:.7s" data-i18n="t93">Node</li>
+              <li class="chip pulse" style="--d:1.4s" data-i18n="t94">Edge</li>
+              <li class="chip pulse" style="--d:2.1s" data-i18n="t93">Node</li>
+              <li class="chip pulse" style="--d:2.8s" data-i18n="t95">End</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="cell cell--lab" aria-labelledby="h-chip">
+          <div class="cell-top"><span class="mono muted" data-i18n="t96">L2 / Emulator, from scratch</span><a class="mono w nav-a" href="https://github.com/MigsBroedel/Chip-8_Emulator" target="_blank" rel="noopener" data-i18n="t97">Source on GitHub <svg class="i"><use href="#i-ur"/></svg></a></div>
+          <h3 id="h-chip" class="h3 h3--m">CHIP-8</h3>
+          <div class="cpu">
+            <div class="phases">
+              <span class="mono phs" data-phase="0">1 Fetch</span>
+              <span class="mono phs" data-phase="1">2 Decode</span>
+              <span class="mono phs" data-phase="2">3 Execute</span>
+            </div>
+            <div class="c8 c8--head mono"><span>Addr</span><span>Opcode</span><span data-i18n="t98">Instruction</span></div>
+            <div id="rows" class="dyn"></div>
+            <div class="regs">
+              <div class="reg"><span class="mono muted">PC</span><span class="reg-v num" data-b="pc"></span></div>
+              <div class="reg"><span class="mono muted">V0</span><span class="reg-v reg-v--sig num" data-b="v0"></span></div>
+              <div class="reg"><span class="mono muted">V1</span><span class="reg-v num" data-b="v1"></span></div>
+              <div class="reg"><span class="mono muted">I</span><span class="reg-v num" data-b="ireg"></span></div>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn w" type="button" id="toggleRun" data-b="runLabel">Run</button>
+            <button class="btn w" type="button" id="stepOnce" data-i18n="t99">Step</button>
+            <button class="btn w" type="button" id="reset" data-i18n="t34">Reset</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 ABOUT -->
+  <section id="about" class="sec light" aria-labelledby="h-about">
+    <div class="wrap">
+      <div class="sec-head draw">
+        <span class="mono idx">05</span>
+        <h2 id="h-about" class="h2" data-i18n="t100">About</h2>
+      </div>
+      <div class="about">
+        <p class="about-p" data-i18n="t101">I'm Miguel, 18. I taught myself to program at 14, studied IT at Senac Sorocaba, co-founded Raia as CTO and put XoPlanilha into production. I'm applying to Computer Science for 2027.</p>
+        <dl class="cells cells--about">
+          <div class="cell cell--full"><dt class="mono muted" data-i18n="t102">Daily tools</dt><dd class="cell-v">Claude Code, OpenAI Codex</dd></div>
+          <div class="cell cell--full"><dt class="mono muted">Stack</dt><dd class="cell-p">Python, TypeScript, JavaScript / FastAPI, NestJS / React, Next.js / PostgreSQL, MongoDB / LangGraph, LangChain, LLM integrations / Railway, Linux VPS, Docker (basic)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 CONTACT -->
+  <section id="contact" class="dark" aria-labelledby="h-contact">
+    <div class="wrap sec sec--contact">
+      <div class="sec-head draw">
+        <span class="mono idx">06</span>
+        <h2 id="h-contact" class="h2" data-i18n="t103">Contact</h2>
+      </div>
+      <ul class="index index--contact draw">
+        <li><a class="crow w" href="mailto:miguel.broedel09@gmail.com"><span class="mono muted crow-k" data-i18n="t104"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>C1 Email</span><span class="crow-v">miguel.broedel09@gmail.com</span><svg class="i arrow" aria-hidden="true"><use href="#i-r"/></svg></a></li>
+        <li><a class="crow w" href="https://www.linkedin.com/in/miguel-miguel-broedel-dos-santos/" target="_blank" rel="noopener"><span class="mono muted crow-k"><svg class="ib" aria-hidden="true"><use href="#b-linkedin"/></svg>C2 LinkedIn</span><span class="crow-v">Miguel Broedel</span><svg class="i arrow" aria-hidden="true"><use href="#i-ur"/></svg></a></li>
+        <li><a class="crow w" href="https://github.com/MigsBroedel" target="_blank" rel="noopener"><span class="mono muted crow-k"><svg class="ib" aria-hidden="true"><use href="#b-github"/></svg>C3 GitHub</span><span class="crow-v">MigsBroedel</span><svg class="i arrow" aria-hidden="true"><use href="#i-ur"/></svg></a></li>
+        <li><a class="crow w" href="https://www.youtube.com/@MiguelBroedel" target="_blank" rel="noopener"><span class="mono muted crow-k"><svg class="ib" aria-hidden="true"><use href="#b-youtube"/></svg>C4 YouTube</span><span class="crow-v">@MiguelBroedel</span><svg class="i arrow" aria-hidden="true"><use href="#i-ur"/></svg></a></li>
+        <li><a class="crow w" href="cv/miguel-broedel-cv.pdf" download><span class="mono muted">C5 CV, PDF</span><span class="crow-v" data-i18n="t105">Download the CV</span><svg class="i arrow" aria-hidden="true"><use href="#i-d"/></svg></a></li>
+      </ul>
+    </div>
+
+    <div class="band">
+      <div class="wrap band-in">
+        <div class="stack-8">
+          <span class="mono" data-i18n="t106">Balance, end of page</span>
+          <span class="zero num" data-b="zero">0.00</span>
+        </div>
+        <p class="band-p" data-i18n="t107">Open to internships and junior roles, 2027.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon dark">
+  <div class="wrap colophon-in">
+    <p class="mono muted">Fraunces, Schibsted Grotesk, IBM Plex Mono / GSAP, Lenis</p>
+    <p class="mono muted">Miguel Broedel, Sorocaba, 2026</p>
+  </div>
+</footer>
+
+<!-- Floating dock: the one frosted element. Appears once the hero is behind you. -->
+<nav class="dock" aria-label="Sections" inert>
+  <a class="dock-a" href="#work" data-sec="work"><span class="mono">01</span><span class="mono dock-l" data-i18n="t108">Work</span></a>
+  <a class="dock-a" href="#think" data-sec="think"><span class="mono">02</span><span class="mono dock-l" data-i18n="t109">Think</span></a>
+  <a class="dock-a" href="#writing" data-sec="writing"><span class="mono">03</span><span class="mono dock-l" data-i18n="t80">Writing</span></a>
+  <a class="dock-a" href="#lab" data-sec="lab"><span class="mono">04</span><span class="mono dock-l">Lab</span></a>
+  <a class="dock-a" href="#about" data-sec="about"><span class="mono">05</span><span class="mono dock-l" data-i18n="t100">About</span></a>
+  <a class="dock-a dock-c" href="#contact" data-sec="contact"><span class="mono" data-i18n="t103">Contact</span></a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="i18n.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
