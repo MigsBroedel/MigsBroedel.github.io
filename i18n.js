@@ -4,6 +4,17 @@
 (() => {
   'use strict';
   const PT = {
+      "m11": "Seguir",
+      "m10": "Resenha",
+      "m9": "Nota",
+      "m8": "Álbum",
+      "m7": "Busca",
+      "m6": "Um Letterboxd para música: avalie e resenhe álbuns, mantenha uma lista para ouvir, siga outros ouvintes. Uma API em NestJS e PostgreSQL por trás de um app React Native, com cada página de álbum tematizada pela capa.",
+      "m5": "L1 / Plataforma de reviews, API + app mobile",
+      "m4": "A visão geral responde uma pergunta antes de tudo: meu mês fecha?",
+      "m3": "Mudar um preço nunca reescreve o histórico. O valor novo vale daquele mês em diante; faturas fechadas mantêm o delas.",
+      "m2": "A IA propõe, a aritmética decide. Um LLM lê o extrato; uma checagem de conciliação decide o que entra.",
+      "m1": "Três usuários de teste expuseram todos os problemas e nos colocaram para trabalhar. Fiz engenharia e produto de ponta a ponta, de features e design a infra, além de vendas e comunicação, e aprendi muito de finanças e contabilidade no caminho.",
       "t0": "Pular para o conteúdo",
       "t1": "01 Trabalho",
       "t2": "02 Como penso",
@@ -57,9 +68,9 @@
       "t50": "D1 / Decisão",
       "t51": "D2 / Decisão",
       "t52": "D3 / Decisão",
-      "t53": "Parsers e LLMs dividem um único pipeline de documentos. <span class=\"ph\">[TRADEOFF]</span>",
-      "t54": "A categorização aprende os padrões de cada usuário. <span class=\"ph\">[TRADEOFF]</span>",
-      "t55": "Um schema de 14 tabelas guarda o razão. <span class=\"ph\">[TRADEOFF]</span>",
+      "t53": "Parsers e LLMs dividem um único pipeline de documentos.",
+      "t54": "A categorização aprende os padrões de cada usuário.",
+      "t55": "Um schema de 14 tabelas guarda o razão.",
       "t56": "Fig. 2 / Importe um extrato",
       "t57": "Importar de novo",
       "t58": "A2 / Plataforma de finanças pessoais / abr 2026–hoje",
@@ -124,6 +135,7 @@
     'Raia architecture diagram, scrolls sideways on small screens': 'Diagrama da arquitetura do Raia, rola para o lado em telas pequenas',
     'Features': 'Funcionalidades',
     'Graph': 'Grafo',
+    'A review, step by step': 'Uma resenha, passo a passo',
     'Sections': 'Seções'
   };
   const PT_JS = {

@@ -200,15 +200,15 @@
           </div>
         </figure>
 
-        <dl class="cells">
+        <dl class="cells cells--two">
           <div class="cell"><dt class="mono muted">Schema</dt><dd class="cell-v" data-i18n="t48">PostgreSQL, 14 tables</dd></div>
-          <div class="cell"><dt class="mono muted">Stack</dt><dd><span class="ph">[RAIA STACK]</span></dd></div>
-          <div class="cell"><dt class="mono muted" data-i18n="t49">Outcome</dt><dd><span class="ph">[OUTCOME]</span></dd></div>
+          <div class="cell"><dt class="mono muted">Stack</dt><dd class="cell-v">FastAPI, LangGraph, Claude Agent SDK, Next.js</dd></div>
+          <div class="cell cell--full"><dt class="mono muted" data-i18n="t49">Outcome</dt><dd class="cell-p" data-i18n="m1">Three test users exposed every problem and put us to work. I owned engineering and product end to end, from features and design to infra, plus sales and communication, and learned a lot of finance and accounting on the way.</dd></div>
         </dl>
         <dl class="cells cells--wide">
-          <div class="cell"><dt class="mono muted" data-i18n="t50">D1 / Decision</dt><dd class="cell-p" data-i18n="t53">Parsers and LLMs share one document pipeline. <span class="ph">[TRADEOFF]</span></dd></div>
-          <div class="cell"><dt class="mono muted" data-i18n="t51">D2 / Decision</dt><dd class="cell-p" data-i18n="t54">Categorization learns each user's patterns. <span class="ph">[TRADEOFF]</span></dd></div>
-          <div class="cell"><dt class="mono muted" data-i18n="t52">D3 / Decision</dt><dd class="cell-p" data-i18n="t55">One schema of 14 tables holds the ledger. <span class="ph">[TRADEOFF]</span></dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t50">D1 / Decision</dt><dd class="cell-p" data-i18n="t53">Parsers and LLMs share one document pipeline.</dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t51">D2 / Decision</dt><dd class="cell-p" data-i18n="t54">Categorization learns each user's patterns.</dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t52">D3 / Decision</dt><dd class="cell-p" data-i18n="t55">One schema of 14 tables holds the ledger.</dd></div>
         </dl>
       </article>
 
@@ -240,8 +240,12 @@
           <div class="cell cell--signal"><dt class="mono" data-i18n="t65">Users, in production</dt><dd class="stat num">15+</dd></div>
           <div class="cell"><dt class="mono muted" data-i18n="t66">Role</dt><dd class="cell-v" data-i18n="t67">Software Engineer</dd></div>
           <div class="cell"><dt class="mono muted" data-i18n="t68">Origin</dt><dd class="cell-v" data-i18n="t69">Freelance project, 2025</dd></div>
-          <div class="cell"><dt class="mono muted">Stack</dt><dd><span class="ph">[XOPLANILHA STACK]</span></dd></div>
-          <div class="cell"><dt class="mono muted" data-i18n="t70">Decisions</dt><dd><span class="ph">[DECISION + TRADEOFF]</span></dd></div>
+          <div class="cell"><dt class="mono muted">Stack</dt><dd class="cell-v">FastAPI, PostgreSQL, React, Capacitor</dd></div>
+        </dl>
+        <dl class="cells cells--wide">
+          <div class="cell"><dt class="mono muted" data-i18n="t50">D1 / Decision</dt><dd class="cell-p" data-i18n="m2">AI proposes, arithmetic decides. An LLM reads the statement; a reconciliation check decides what gets in.</dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t51">D2 / Decision</dt><dd class="cell-p" data-i18n="m3">A price change never rewrites history. The new value applies from that month on; closed invoices keep theirs.</dd></div>
+          <div class="cell"><dt class="mono muted" data-i18n="t52">D3 / Decision</dt><dd class="cell-p" data-i18n="m4">The overview answers one question before anything else: does my month close?</dd></div>
         </dl>
       </article>
 
@@ -293,19 +297,19 @@
         <h2 id="h-lab" class="h2">Lab</h2>
       </div>
       <div class="cells cells--lab">
-        <article class="cell cell--lab" aria-labelledby="h-navi">
+        <article class="cell cell--lab" aria-labelledby="h-music">
           <div class="stack-16">
-            <div class="cell-top"><span class="mono muted" data-i18n="t89">L1 / Agent framework</span><span class="mono badge" data-i18n="t90">In development</span></div>
-            <h3 id="h-navi" class="h3 h3--m">Navi</h3>
-            <p class="lab-p" data-i18n="t91">A personal AI agent framework. My own orchestration harness, on LangGraph.</p>
+            <div class="cell-top"><span class="mono muted" data-i18n="m5">L1 / Review platform, API + mobile app</span><span class="lab-links"><a class="mono w nav-a" href="https://github.com/MigsBroedel/MusicBoxdBack" target="_blank" rel="noopener">API <svg class="i"><use href="#i-ur"/></svg></a><a class="mono w nav-a" href="https://github.com/MigsBroedel/MusicBoxMobile" target="_blank" rel="noopener">App <svg class="i"><use href="#i-ur"/></svg></a></span></div>
+            <h3 id="h-music" class="h3 h3--m">MusicBox</h3>
+            <p class="lab-p" data-i18n="m6">A Letterboxd for music: rate and review albums, keep a listen list, follow other listeners. A NestJS and PostgreSQL API behind a React Native app, with each album page themed from its cover art.</p>
           </div>
           <div class="stack-12">
-            <ol class="chips chips--lg chips--flow" aria-label="Graph">
-              <li class="chip pulse" data-i18n="t92">Start</li>
-              <li class="chip pulse" style="--d:.7s" data-i18n="t93">Node</li>
-              <li class="chip pulse" style="--d:1.4s" data-i18n="t94">Edge</li>
-              <li class="chip pulse" style="--d:2.1s" data-i18n="t93">Node</li>
-              <li class="chip pulse" style="--d:2.8s" data-i18n="t95">End</li>
+            <ol class="chips chips--lg chips--flow" aria-label="A review, step by step">
+              <li class="chip pulse" data-i18n="m7">Search</li>
+              <li class="chip pulse" style="--d:.7s" data-i18n="m8">Album</li>
+              <li class="chip pulse" style="--d:1.4s" data-i18n="m9">Rate</li>
+              <li class="chip pulse" style="--d:2.1s" data-i18n="m10">Review</li>
+              <li class="chip pulse" style="--d:2.8s" data-i18n="m11">Follow</li>
             </ol>
           </div>
         </article>
